@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Check the network provider of any Nigerian phone and mobile number">
+    <meta name="robots" content="index, follow">
+    
+    <meta property="og:title" content="Check Am!">
+    <meta property="og:description" content="A simple web app to check the network provider of any phone number">
+    <meta property="og:image" content="https://yourdomain.com/assets/images/home-preview.svg">
+    <meta property="og:url" content="https://yourdomain.com">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Check Am!">
+    <meta name="twitter:description" content="A simple web app to check the network provider of any phone number">
+    <meta name="twitter:image" content="https://yourdomain.com/assets/images/home-preview.svg">
+
+    <title>Check Am! | Check the network of any Nigerian mobile phone number</title>
+    <link rel="shortcut icon" href="/assets/images/io-logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Monoton&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <a class="brand" href="#">IO</a>
+        <span class="info">
+          <i class="fa-solid fa-lightbulb"></i> About
+        </span>
+        
+    </nav>
+    <main class="wrapper">
+        <h1 class="heading-text">
+            Check Am
+            <span><i class="fa-solid fa-magnifying-glass"></i></span>
+        </h1>
+        <span class="error-message"></span>
+        <div class="search-wrapper">
+            <span class="tel-code">+234</span>
+            <input name="phone-number" class="search-box" type="text" placeholder="Phone Number" inputmode="numeric" pattern="[0-9]*" maxlength="11">
+            <span class="result">
+                <i class="fa-solid fa-spinner fa-spin"></i>
+            </span>
+        </div>
+        
+        <div class="result-card">
+            <div class="network-logo-wrapper">
+                <img src="/assets/images/.png" alt="Logo of Network">
+            </div>
+            <div class="details">
+                The number you entered is most likely a/an <h3 class="network">MTN Communication limited.</h3> line.
+            </div>
+        </div>
+    </main>
+    <div class="modal" role="document">
+        
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <title>close</title>
+                        <path d="M10 8.586l-7.07-7.07-1.415 1.413L8.585 10l-7.07 7.07 1.414 1.415 7.07-7.07 7.07 7.07 1.415-1.414-7.07-7.07 7.07-7.07-1.414-1.415L10 8.585" fill="#6c757d" fill-rule="evenodd"></path>
+                    </svg>
+                </span>
+            </button>
+            
+            <div class="container">
+                <div class="img-wrap">
+                    <img src="/assets/images/pelumi-pfp.jpg" alt="Israel Oyeboade profile image" class="profile-img">
+                </div>
+                <div class="tweet-wrap">
+                  <div class="tweet-info">
+                    <div>
+                      <a href="https://www.linkedin.com/in/israel-oyeboade-b4385723a/" target="_blank">
+                        <strong class="name">Israel Oyeboade</strong>
+                        <span>@israeL__xy</span>
+                      </a>
+                      &middot;
+                      <a href="https://www.linkedin.com/in/israel-oyeboade-b4385723a/">Apr 21</a>
+                    </div>
+                    <img class="options" src="https://res.cloudinary.com/thirus/image/upload/v1632940964/logos/options_wdtupw.svg" alt="Option icon image">
+                  </div>
+                  <div class="tweet">
+                    Hi guys, Israel here!
+                    <br>
+                    I'm a Python web developer who has recently fallen in love with Front-end development.
+                    <br>
+                    <br>
+                    I built this site out of the pressing need to check the network of a person's number, and while it may not be perfect, I hope you find it useful.
+                    <br>
+                    <br>
+                    On most days of the week, I'm a Coding Instructor training people who aspire to be proficient in HTML, CSS, JavaScript, Python & Dart/Flutter, and that includes me <i>(hehe)</i>.
+                    <br>
+                    <br>
+                    TLDR: You can connect with me on <a href="https://www.linkedin.com/in/israel-oyeboade-b4385723a/" target="_blank"><i class="fa-brands fa-linkedin" style="color: #174867;"></i> LinkedIn</a>, <a href="https://x.com/israeL__xy" target="_blank"><i class="fa-brands fa-square-x-twitter" style="color: #000000;"></i>Twitter</a> and <a href="https://www.github.com/israel-oye" target="_blank"><i class="fa-brands fa-square-github" style="color: #000000;"></i> GitHub</a>. BTW, you can check out the entire source code of this site here.
+                    I also built this <a href="https://stashit.onrender.com">other</a> cool project over a year ago.
+                  </div>
+                  <div class="actions">
+                    <div class="action">
+                      <img src="https://res.cloudinary.com/thirus/image/upload/v1632940688/logos/reply_ts2dvv.svg" alt="Reply icon">
+                      <span>4</span>
+                    </div>
+                    <div class="action">
+                      <img src="https://res.cloudinary.com/thirus/image/upload/v1632940688/logos/retweet_wkdf6j.svg" alt="Retweet icon">
+                      <span>0</span>
+                    </div>
+                    <div class="like-action">
+                      <i class="fa-regular fa-sm fa-heart"></i>
+                      <span>4</span>
+                    </div>
+                    <div class="action">
+                      <img src="https://res.cloudinary.com/thirus/image/upload/v1632940688/logos/share_rgaloj.svg" alt="Share icon">
+                    </div>
+                    <div class="action">
+                      <img src="https://res.cloudinary.com/thirus/image/upload/v1632940964/logos/stats_jt2vsb.svg" alt="Stats icon">
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div> 
+    <script src="https://kit.fontawesome.com/868c606ea8.js" crossorigin="anonymous"></script>
+    <script src="/assets/js/script.js"></script>
+</body>
+
+</html>

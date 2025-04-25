@@ -434,16 +434,15 @@ a.brand:hover{
     animation: beat 0.5s linear 1;
    }
 
-  /* .like-icon{
-    cursor: unset;
-    transition: background-color 0.7s ease;
-  }
+   .tweet a{
+    color: #2098cf;
+    transition: all 0.3s ease-in;
+   }
 
-  .like-icon:hover{
-    background-color: rgb(231, 59, 39);
-    background-clip: content-box;
-  } */
-
+   .tweet a:hover{
+    color: #666;
+    text-decoration: underline;
+   }
 
   /* Animation class */
 

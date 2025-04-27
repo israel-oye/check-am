@@ -117,14 +117,8 @@ const toggleModal = show => {
         modal.classList.remove('show');
         modal.classList.add('hide');
 
-        // modal.addEventListener('animationend', function handler(e) {
-        //     modal.classList.remove('hide');
-        //     modal.classList.add('hidden');
-
-        // }, { once: true });
         const handleAnimationEnd = (e) => {
             if (e.animationName === 'pop-down') {
-                console.log('Event fired');
                 modal.classList.remove('hide');
                 modal.classList.add('hidden');
             }
@@ -187,15 +181,3 @@ const likeButton = document.querySelector('.like-action i');
 likeButton.addEventListener('click', function (e) {
     this.classList.toggle('like');
 })
-
-// likeContainer.addEventListener('click', function (e) {
-//     // let defaultContent = this.innerHTML;
-//     this.innerHTML = `<i class="fa-solid fa-heart fa-beat" style="color: #cc2b19;"></i>`
-// })
-
-// likeContainer.addEventListener('mouseout', (e) => {
-//     likeContainer.innerHTML = `
-//     <img class="like-icon" src="https://res.cloudinary.com/thirus/image/upload/v1632940688/logos/like_zmb4tf.svg" alt="Like icon">
-//                       <span>4</span>
-//     `
-// })

@@ -336,8 +336,9 @@ a.brand:hover{
 }
 
 .modal.hide{ 
-    -webkit-animation: pop-down 0.5s ease-in;
-    animation: pop-down 0.5s ease-in;
+    display: flex;
+    -webkit-animation: pop-down 0.3s ease-in;
+    animation: pop-down 0.3s ease-in;
 }
 
 .hidden{

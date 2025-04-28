@@ -356,6 +356,22 @@ a.brand:hover{
     box-shadow: 0 0 8px rgba(251, 251, 251, 0.556);
 }
 
+.about-modal h2{
+    font-size: 2.5rem;
+    color: transparent;
+    background: linear-gradient(245deg,#606c7a 40%, #495057);
+    background-attachment: local;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.about-modal .modal-content{
+    width: 55vw;
+    line-height: 1.3;
+    font-size: 1.01rem;
+    border-top: 5px solid var(--accent-color);
+}
+
 
 .container {
     display: flex;
@@ -433,7 +449,7 @@ a.brand:hover{
   .like-action i {
     vertical-align: baseline;
     margin-right: 0.5rem;
-    color: #666;
+    color: #e12619;
     cursor: pointer;
   }
 
@@ -478,6 +494,12 @@ a.brand:hover{
     }
 }
 
+@media (max-width: 768px) and (min-width: 508px) {
+    .modal-content{
+        width: 70vw !important;
+    }
+}
+
 @media (max-width: 508px) {
     html{
         font-size: 12px;
@@ -493,8 +515,12 @@ a.brand:hover{
     }
 
     .modal-content{
-        width: fit-content;
+        width: fit-content !important;
         max-width: 90%;
+    }
+
+    .about-modal .modal-content{
+        max-width: 80%;
     }
 }
 

@@ -6,9 +6,11 @@ const resultCard = document.querySelector('.result-card');
 const resultCardImg = document.querySelector('.result-card img');
 const resultCardNetwork = document.querySelector('.result-card h3.network');
 const errorBox = document.getElementsByClassName('error-message')[0];
-const modal = document.querySelector('.modal');
-const closeBtn = document.querySelector('button.close');
+const tweetModal = document.querySelector('.modal');
+const aboutModal = document.querySelector('.about-modal');
+const closeBtns = document.querySelectorAll('button.close');
 const infoNav = document.querySelector('nav .info');
+const brandNav = document.querySelector('nav .brand');
 
 
 const nigeriaNetworkData = {
@@ -108,7 +110,7 @@ const clearDisplay = () => {
 };
 
 
-const toggleModal = show => {
+const toggleModal = (modal, show) => {
     if (show) {
         modal.classList.remove('hide');
         modal.classList.remove('hidden');
@@ -161,17 +163,25 @@ search.addEventListener('input', debounce((e) => {
 }, 300)
 );
 
-infoNav.addEventListener('click', (e) => {
-    toggleModal(true);
+brandNav.addEventListener('click', (e) => {
+    toggleModal(tweetModal, true);
 })
 
-closeBtn.addEventListener('click', (e) => {
-    toggleModal(false);
+infoNav.addEventListener('click', (e) => {
+    toggleModal(aboutModal, true);
 })
+
+closeBtns.forEach((btn) => {
+    btn.addEventListener('click', (e) => {
+        let referrentModal = btn.parentElement.parentElement;
+        toggleModal(referrentModal, false);
+    })
+});
+
 
 window.addEventListener('click', (e) => {
-    if (e.target == modal) {
-        toggleModal(false);
+    if (e.target.classList.contains('modal')) {
+        toggleModal(e.target, false);
     }
 })
 

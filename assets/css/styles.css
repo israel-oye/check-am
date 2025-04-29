@@ -148,6 +148,37 @@ a.brand:hover{
     text-shadow: 0.25rem 0 0.8rem rgba(0, 0, 0, 0.3);
 }
 
+.tooltip {
+    position: relative;
+    font-size: 2rem;
+    font-weight: 900;
+    cursor: pointer;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 7rem;
+    background: #343a40b9;
+    backdrop-filter: blur(3px);
+    color: #E9ECEF;
+    font-size: 1.2rem;
+    font-weight: initial;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  .tooltip.show .tooltiptext, .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+
 .wrapper{
     max-width: 960px;
     height: 75vh;
@@ -163,13 +194,11 @@ a.brand:hover{
 /* SEARCH BOX STYLES */
 
 .search-wrapper{
-    /* width: 70%; */
     height: 9vh;
     background-color: var(--accent-color);
     border: 2px solid #362c2c;
     border-radius: 1.25rem;
     box-shadow: 0 5px #362c2cc1;
-    /* font-size: 2rem; */
     display: flex;
     align-items: stretch;
     position: relative;

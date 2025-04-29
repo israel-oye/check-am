@@ -11,6 +11,7 @@ const aboutModal = document.querySelector('.about-modal');
 const closeBtns = document.querySelectorAll('button.close');
 const infoNav = document.querySelector('nav .info');
 const brandNav = document.querySelector('nav .brand');
+const toolTip = document.getElementsByClassName('tooltip')[0];
 
 
 const nigeriaNetworkData = {
@@ -163,6 +164,10 @@ search.addEventListener('input', debounce((e) => {
 }, 300)
 );
 
+toolTip.addEventListener('click', function (e) {
+    this.classList.toggle('show');
+})
+
 brandNav.addEventListener('click', (e) => {
     toggleModal(tweetModal, true);
 })
@@ -182,6 +187,9 @@ closeBtns.forEach((btn) => {
 window.addEventListener('click', (e) => {
     if (e.target.classList.contains('modal')) {
         toggleModal(e.target, false);
+    }
+    else if (!e.target.classList.contains('tooltip')) {
+        toolTip.classList.remove('show');
     }
 })
 

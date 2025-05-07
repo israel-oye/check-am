@@ -179,6 +179,18 @@ a.brand:hover{
     opacity: 1;
   }
 
+  .tooltip:hover .tooltip-icon{
+    border-width: 3px;
+  }
+
+  .tooltip-icon{
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    border: 1px solid var(--accent-color);
+    transition: border-width 0.4s ease-in;
+  }
+
 .wrapper{
     max-width: 960px;
     height: 75vh;
